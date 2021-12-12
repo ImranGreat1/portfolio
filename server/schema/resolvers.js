@@ -1,5 +1,6 @@
 const { DUMMY_AUTHORS, DUMMY_POSTS } = require('./dummy-data');
 const Post = require('../models/Post');
+const User = require('../models/User');
 
 const resolvers = {
   Query: {
@@ -18,7 +19,7 @@ const resolvers = {
       return DUMMY_POSTS.find((post) => post.id === args.id);
     },
 
-    getAuthor: (id) => {
+    getUser: (id) => {
       return DUMMY_AUTHORS.find((author) => author.id === id);
     },
   },
@@ -32,6 +33,21 @@ const resolvers = {
       const post = await Post.create(data);
 
       return post;
+    },
+
+    createUser: async (parent, args, context) => {
+      // Get user fields
+      const { email, firstName, password, passwordConfirm } = args;
+
+      // Create user
+      const user = await User.create({
+        email,
+        firstName,
+        password,
+        passwordConfirm,
+      });
+
+      return user;
     },
   },
 };
