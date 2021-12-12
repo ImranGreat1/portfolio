@@ -1,0 +1,262 @@
+.home {
+  font-size: 1.5rem;
+  padding: 2rem 12rem;
+}
+
+@media screen and (max-width: 767.98px) {
+  .home {
+    font-size: 1.5rem;
+    padding: 2rem 4rem;
+  }
+}
+
+.home__header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 575.98px) {
+  .home {
+    padding: 2rem 5rem;
+  }
+
+  .home__header {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 449.98px) {
+  .home {
+    padding: 3rem;
+  }
+}
+
+.home__intro-name {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.home__icon {
+  height: 10rem;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+  margin-top: -4rem;
+}
+
+.home__icon .rectangle,
+.home__icon .circle {
+  background-color: #333;
+  display: inline-block;
+}
+
+.home__icon .rectangle {
+  width: 7rem;
+  height: 2.8rem;
+  transform: rotate(125deg);
+}
+
+.home__icon .circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transform: translate(-2rem, 2rem);
+}
+
+.home__intro-field {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.home__intro-info {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.home__important-links {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 575.98px) {
+  .home__important-links {
+    margin-left: 0;
+  }
+}
+
+.home__important-links > * {
+  border-bottom: 1px solid #d1d5db;
+  display: inline-block;
+}
+
+.home__link {
+  padding: 1rem 0;
+}
+
+.home__link-content {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.3rem;
+}
+
+@media screen and (max-width: 575.98px) {
+  .home__link-content:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  .home__link-content:nth-child(2) {
+    transform: translateX(45%);
+  }
+  .home__link-content:last-child {
+    transform: translateX(100%);
+  }
+}
+
+.home__link-content svg {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+  color: #2f9e44;
+}
+
+.home__familiar-techs {
+  margin: 5rem 0;
+  /* text-align: center; */
+}
+
+.home__tech-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 499.98px) {
+  .home__tech-icons {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home__frontend-icons {
+  grid-column: 1 / 2;
+}
+
+.home__backend-icons {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+@media screen and (max-width: 499.98px) {
+  .home__backend-icons {
+    grid-column: 1 / 2;
+    text-align: end;
+  }
+
+  .home__backend-icons p {
+    /* text-align: start; */
+  }
+}
+
+@media screen and (max-width: 349.98px) {
+  .home__frontend-icons {
+    margin-bottom: 1rem;
+  }
+}
+
+.home__tech-icons-label {
+  margin-bottom: 1rem;
+}
+
+.home__tech-icons svg:not(:first-child) {
+  margin-left: 0.3rem;
+}
+
+.home__more-on-experience {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.home__contact {
+}
+
+@media screen and (max-width: 575.98px) {
+  .home__more-on-experience {
+    flex-direction: column;
+  }
+
+  .home__contact {
+    margin-bottom: 2rem;
+  }
+}
+
+.home__location {
+  margin-bottom: 1.7rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.home__book-call {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home__book-call svg {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.home__journey {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.home__more-on-experience > * {
+  flex: 1;
+}
+
+/* HOME PROJECTS */
+.home__projects {
+  margin-bottom: 4rem;
+}
+
+/* HOME BLOG SECTION */
+
+.home__blog {
+  /* padding: 0 4rem; */
+}
+
+.home__blog .home__blog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+@media screen and (max-width: 991.98px) {
+  .home__blog .home__blog-wrapper {
+    padding: 0;
+    column-gap: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home__blog .home__blog-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home__blog .home__blog-wrapper {
+    /* padding: 0 4rem; */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home__blog .home__blog-wrapper {
+    padding: 0;
+  }
+}

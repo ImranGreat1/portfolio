@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding: 0.7rem 2.7rem;
+  border: 1px solid#12b886;
+  border-radius: 3px;
+  color: #12b886;
+  transition: all 0.4s;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767.98px) {
+  .btn {
+    padding: 0.7rem 2.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+.btn:hover {
+  background-color: #12b886;
+  color: #fff;
+}
+
+.btn > * {
+  color: #fff;
+  transition: all 0.4s;
+}

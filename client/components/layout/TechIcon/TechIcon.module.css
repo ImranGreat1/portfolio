@@ -1,0 +1,16 @@
+.icon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.7rem;
+}
+
+.icon__svg {
+  font-size: 3rem;
+  color: #2f9e44;
+}
+
+.icon__name {
+  font-size: 1.1rem;
+  color: #555;
+}
